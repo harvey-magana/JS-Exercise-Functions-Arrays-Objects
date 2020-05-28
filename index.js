@@ -56,7 +56,7 @@ function sayGoodbye(name) {
 */
 function temperatureCtoF(temp) {
   let fahrenheit = (temp * 1.8) + 32;
-  return fahrenheit;
+  return Math.round(fahrenheit);
 }
 
 /**
@@ -76,9 +76,16 @@ function temperatureCtoF(temp) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, unit) {
+  if(unit === 'C') {
+      return temperatureCtoF(temp) + 'F';
+  } else {
+        let cels = (temp - 32)/1.8;
+        cels = Math.round(cels);
+        return cels + 'C';
+    }
 }
+
 
 
 /**
