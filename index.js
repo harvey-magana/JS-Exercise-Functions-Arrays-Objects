@@ -80,9 +80,7 @@ function temperatureInF(temp, unit) {
   if(unit === 'C') {
       return temperatureCtoF(temp) + 'F';
   } else {
-        let cels = (temp - 32)/1.8;
-        cels = Math.round(cels);
-        return cels + 'F';
+        return temp + 'F';
     }
 }
 
@@ -294,8 +292,13 @@ function getModelYears(inventory) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(inventory, id) {
+  let arr = inventory;
+  for(var i = 0; i < arr.length; i++) {
+      if(arr[i].id === id) {
+          return `This is a ${arr[i].car_make} ${arr[i].car_model}`;
+      }
+  }
 }
 
 /**
