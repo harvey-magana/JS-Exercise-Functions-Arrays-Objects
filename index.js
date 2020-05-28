@@ -235,7 +235,14 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  let arr = inventory; 
+    let arrIndex = arr[index];
+
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] === arrIndex) {
+            return `This is a ${arrIndex.car_make} ${arrIndex.car_model}`;
+        }
+    }
 }
 
 /**
