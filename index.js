@@ -82,7 +82,7 @@ function temperatureInF(temp, unit) {
   } else {
         let cels = (temp - 32)/1.8;
         cels = Math.round(cels);
-        return cels + 'C';
+        return cels + 'F';
     }
 }
 
