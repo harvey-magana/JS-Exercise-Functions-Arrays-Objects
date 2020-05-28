@@ -146,8 +146,12 @@ function getName(obj) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(appleArr) {
+  for(var i = 0; i < appleArr.length; i++) {
+        if(appleArr[i] === 'apple') {
+            return appleArr.indexOf('apple')
+        }
+    }
 }
 
 /**
