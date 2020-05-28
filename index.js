@@ -37,7 +37,7 @@ function addNumbers(num1, num2) {
  * 
 */
 function sayGoodbye(/* code here */) {
-  /* code here */
+  return `Goodby ${name}. Have a great day.`;
 }
 
 /**
