@@ -40,6 +40,8 @@ function sayGoodbye(name) {
   return `Goodby ${name}. Have a great day.`;
 }
 
+console.log(sayGoodbye("Brigid"));
+
 /**
  * ### Challenge `temperatureCtoF`
  * 
@@ -59,6 +61,7 @@ function temperatureCtoF(temp) {
   return Math.round(fahrenheit);
 }
 
+console.log(temperatureCtoF(24));
 /**
  * ### Challenge `temperatureInF`
  * 
@@ -84,7 +87,7 @@ function temperatureInF(temp, unit) {
     }
 }
 
-
+console.log(temperatureInF(75));
 
 /**
  * ### Challenge `makePersonObject`
@@ -110,6 +113,8 @@ function makePersonObject(id, name, email) {
     return obj;
 }
 
+console.log(makePersonObject(001, "Dexter", "dexter@gmail.com"));
+
 /**
  * ### Challenge `getName`
  * 
@@ -128,6 +133,9 @@ function getName(obj) {
   return `Hello, my name is ${name}`;
 }
 
+console.log(getName(makePersonObject(001, "Dexter", "dexter@gmail.com")));
+
+console.log(getName({id: 3, name: "Kimberly", email: "kimster@gmail.com"}))
 
 /**
  * ### Challenge `appleIndex`
@@ -151,6 +159,8 @@ function appleIndex(appleArr) {
         }
     }
 }
+
+console.log(appleIndex([ 'orange', 'grape', 'banana', 'apple', 'mango' ]))
 
 /**
  * ### Challenge `isItAnApple`
@@ -178,9 +188,7 @@ function isItAnApple(appleArr) {
     return appleArr;
 }
 
-
-
-
+console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]));
 
 // ⭐️ Example Test Data ⭐️
 
@@ -215,6 +223,8 @@ function get3rdCar(inventory) {
   return `The is a ${the3rd.car_make} ${the3rd.car_model}`
 }
 
+console.log(get3rdCar(inventory))
+
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -243,6 +253,8 @@ function getCarInfoByIndex(inventory, index) {
     }
 }
 
+console.log(getCarInfoByIndex(inventory, 0));
+
 /**
  * ### Challenge `getLastCarInfo`
  * 
@@ -261,6 +273,8 @@ function getLastCarInfo(inventory) {
     }
 }
 
+console.log(getLastCarInfo(inventory))
+
 /**
  * ### Challenge `getModelYears`
  * 
@@ -277,6 +291,8 @@ function getModelYears(inventory) {
     }
    return carYears;
 }
+
+console.log(getModelYears(inventory));
 
 /**
  * ### Challenge `getCarInfoById`
@@ -300,6 +316,8 @@ function getCarInfoById(inventory, id) {
       }
   }
 }
+
+console.log(getCarInfoById(inventory, 5));
 
 /**
  * ### Challenge `getOlderCars`
@@ -342,6 +360,7 @@ function getGermanCars(inventory) {
    return auto;
 }
 
+console.log(getGermanCars(inventory));
 /**
  * ### Challenge `carMaker`
  * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
