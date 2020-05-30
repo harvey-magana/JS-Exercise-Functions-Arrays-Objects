@@ -1,5 +1,6 @@
 // ⭐️ Example Challenge start ⭐️
 
+
 /**
  * ### Challenge `addNumbers`
  * 
@@ -39,7 +40,7 @@ function addNumbers(num1, num2) {
 function sayGoodbye(name) {
   return `Goodby ${name}. Have a great day.`;
 }
-
+console.log("This is the sayGoodbye function:")
 console.log(sayGoodbye("Brigid"));
 
 /**
@@ -60,7 +61,7 @@ function temperatureCtoF(temp) {
   let fahrenheit = (temp * 1.8) + 32;
   return Math.round(fahrenheit);
 }
-
+console.log("This is the temperatureCtoF function:")
 console.log(temperatureCtoF(24));
 /**
  * ### Challenge `temperatureInF`
@@ -79,6 +80,7 @@ console.log(temperatureCtoF(24));
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
+
 function temperatureInF(temp, unit) {
   if(unit === 'C') {
       return temperatureCtoF(temp) + 'F';
@@ -87,6 +89,7 @@ function temperatureInF(temp, unit) {
     }
 }
 
+console.log("This is the temperatureInF function:")
 console.log(temperatureInF(75));
 
 /**
@@ -113,6 +116,7 @@ function makePersonObject(id, name, email) {
     return obj;
 }
 
+console.log("This is the makePersonObject function:")
 console.log(makePersonObject(001, "Dexter", "dexter@gmail.com"));
 
 /**
@@ -133,8 +137,10 @@ function getName(obj) {
   return `Hello, my name is ${name}`;
 }
 
+console.log("This is the getName (version 1) function:")
 console.log(getName(makePersonObject(001, "Dexter", "dexter@gmail.com")));
 
+console.log("This is the getName (version 2) function:")
 console.log(getName({id: 3, name: "Kimberly", email: "kimster@gmail.com"}))
 
 /**
@@ -160,6 +166,7 @@ function appleIndex(appleArr) {
     }
 }
 
+console.log("This is the appleIndex function:")
 console.log(appleIndex([ 'orange', 'grape', 'banana', 'apple', 'mango' ]))
 
 /**
@@ -188,6 +195,7 @@ function isItAnApple(appleArr) {
     return appleArr;
 }
 
+console.log("This is the isItAnApple function:")
 console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]));
 
 // ⭐️ Example Test Data ⭐️
@@ -223,6 +231,7 @@ function get3rdCar(inventory) {
   return `The is a ${the3rd.car_make} ${the3rd.car_model}`
 }
 
+console.log("This is the get3rdCar function:")
 console.log(get3rdCar(inventory))
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -253,6 +262,7 @@ function getCarInfoByIndex(inventory, index) {
     }
 }
 
+console.log("This is the getCarInfoByIndex function:")
 console.log(getCarInfoByIndex(inventory, 0));
 
 /**
@@ -273,6 +283,7 @@ function getLastCarInfo(inventory) {
     }
 }
 
+console.log("This is the getLastCarInfo function:")
 console.log(getLastCarInfo(inventory))
 
 /**
@@ -292,6 +303,7 @@ function getModelYears(inventory) {
    return carYears;
 }
 
+console.log("This is the getModelYears function:")
 console.log(getModelYears(inventory));
 
 /**
@@ -317,6 +329,7 @@ function getCarInfoById(inventory, id) {
   }
 }
 
+console.log("This is the getCarInfoById function:")
 console.log(getCarInfoById(inventory, 5));
 
 /**
@@ -360,6 +373,7 @@ function getGermanCars(inventory) {
    return auto;
 }
 
+console.log("This is the getGermanCars function: (THIS ONE IS MY STRETCH)")
 console.log(getGermanCars(inventory));
 /**
  * ### Challenge `carMaker`
