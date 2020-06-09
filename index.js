@@ -40,7 +40,7 @@ function addNumbers(num1, num2) {
 function sayGoodbye(name) {
   return `Goodby ${name}. Have a great day.`;
 }
-console.log("This is the sayGoodbye function:")
+console.log("%cChallenge 1:", "color: green");
 console.log(sayGoodbye("Brigid"));
 
 /**
@@ -61,7 +61,7 @@ function temperatureCtoF(temp) {
   let fahrenheit = (temp * 1.8) + 32;
   return Math.round(fahrenheit);
 }
-console.log("This is the temperatureCtoF function:")
+console.log("%cChallenge 2:", "color: green");
 console.log(temperatureCtoF(24));
 /**
  * ### Challenge `temperatureInF`
@@ -89,7 +89,7 @@ function temperatureInF(temp, unit) {
     }
 }
 
-console.log("This is the temperatureInF function:")
+console.log("%cChallenge 3:", "color: green");
 console.log(temperatureInF(75));
 
 /**
@@ -116,7 +116,7 @@ function makePersonObject(id, name, email) {
     return obj;
 }
 
-console.log("This is the makePersonObject function:")
+console.log("%cChallenge 4:", "color: green");
 console.log(makePersonObject(001, "Dexter", "dexter@gmail.com"));
 
 /**
@@ -137,10 +137,10 @@ function getName(obj) {
   return `Hello, my name is ${name}`;
 }
 
-console.log("This is the getName (version 1) function:")
+console.log("%cChallenge 5a:", "color: green");
 console.log(getName(makePersonObject(001, "Dexter", "dexter@gmail.com")));
 
-console.log("This is the getName (version 2) function:")
+console.log("%cChallenge 5b:", "color: green");
 console.log(getName({id: 3, name: "Kimberly", email: "kimster@gmail.com"}))
 
 /**
@@ -166,7 +166,7 @@ function appleIndex(appleArr) {
     }
 }
 
-console.log("This is the appleIndex function:")
+console.log("%cChallenge 6:", "color: green");
 console.log(appleIndex([ 'orange', 'grape', 'banana', 'apple', 'mango' ]))
 
 /**
@@ -195,7 +195,7 @@ function isItAnApple(appleArr) {
     return appleArr;
 }
 
-console.log("This is the isItAnApple function:")
+console.log("%cChallenge 7:", "color: green");
 console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]));
 
 // ⭐️ Example Test Data ⭐️
@@ -231,7 +231,7 @@ function get3rdCar(inventory) {
   return `The is a ${the3rd.car_make} ${the3rd.car_model}`
 }
 
-console.log("This is the get3rdCar function:")
+console.log("%cChallenge 8:", "color: green");
 console.log(get3rdCar(inventory))
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -262,7 +262,7 @@ function getCarInfoByIndex(inventory, index) {
     }
 }
 
-console.log("This is the getCarInfoByIndex function:")
+console.log("%cChallenge 9:", "color: green");
 console.log(getCarInfoByIndex(inventory, 0));
 
 /**
@@ -283,7 +283,7 @@ function getLastCarInfo(inventory) {
     }
 }
 
-console.log("This is the getLastCarInfo function:")
+console.log("%cChallenge 10:", "color: green");
 console.log(getLastCarInfo(inventory))
 
 /**
@@ -303,7 +303,7 @@ function getModelYears(inventory) {
    return carYears;
 }
 
-console.log("This is the getModelYears function:")
+console.log("%cChallenge 11:", "color: green");
 console.log(getModelYears(inventory));
 
 /**
@@ -329,7 +329,7 @@ function getCarInfoById(inventory, id) {
   }
 }
 
-console.log("This is the getCarInfoById function:")
+console.log("%cChallenge 12:", "color: green");
 console.log(getCarInfoById(inventory, 5));
 
 /**
@@ -373,7 +373,7 @@ function getGermanCars(inventory) {
    return auto;
 }
 
-console.log("This is the getGermanCars function: (THIS ONE IS MY STRETCH)")
+console.log("%cStretch 1:", "color: green");
 console.log(getGermanCars(inventory));
 /**
  * ### Challenge `carMaker`
